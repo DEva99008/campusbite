@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#092440">
+<title>Student sign in | CampusBite KPRCAS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="student-page">
+<header class="top student-top">
+  <a class="brand" href="index(1).html"><img src="campusbite-logo.png" alt="CampusBite logo"><span>Campus<span class="orange">Bite</span></span></a>
+  <a class="nav" href="index(1).html">← Back to CampusBite</a>
+</header>
+<main class="student-auth-layout">
+  <section class="student-auth-story">
+    <span class="pill">KPRCAS STUDENT ACCESS</span>
+    <h1>Your campus<br><span class="orange">break starts here.</span></h1>
+    <p>Sign in to track canteen orders, check student rewards and find pickup points around campus.</p>
+    <div class="student-feature-pills"><span>⌖ KPRCAS pickup</span><span>◷ Order status</span><span>✦ Student rewards</span></div>
+  </section>
+  <section class="panel student-auth-card">
+    <p class="eyebrow">STUDENT PORTAL</p>
+    <h2>Student sign in</h2>
+    <p class="muted-copy">This student sign-in page is separate from the staff admin console.</p>
+    <form id="studentLoginForm">
+      <label>Student ID<input id="studentId" name="studentId" autocomplete="username" required placeholder="e.g. cb1024" value="cb1024"></label>
+      <label>Campus PIN<input id="studentPin" name="studentPin" type="password" inputmode="numeric" autocomplete="current-password" required placeholder="Enter your PIN" value="1234"></label>
+      <button class="primary full" type="submit">Sign in to student portal</button>
+      <p id="studentLoginError" class="error" role="alert"></p>
+    </form>
+    <div class="demo-access"><b>Local demo access</b><span>Student ID: cb1024</span><span>PIN: 1234</span><small>Demo only: this static-site PIN is not secure authentication. Do not enter real passwords or sensitive information.</small></div>
+    <a class="student-back-link" href="index(1).html">Continue browsing the campus menu →</a>
+  </section>
+</main>
+<footer><img src="campusbite-logo.png" alt=""><span>CampusBite · KPRCAS campus food</span><small>Local demo app · student data is stored in this browser.</small></footer>
+<script src="student-auth.js"></script>
+</body>
+</html>
