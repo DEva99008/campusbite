@@ -60,7 +60,7 @@ function startPortal() {
 
 $('studentSignOut').addEventListener('click', () => {
   localStorage.removeItem(SESSION_KEY);
-  window.location.replace('student-login.html');
+  window.location.replace('index.html');
 });
 window.addEventListener('storage', event => {
   if (event.key === DATA_KEY || event.key === SESSION_KEY) startPortal();
